@@ -47,4 +47,3 @@ Este podría ser un ejemplo base de la estructura de un proyecto:
 |- README.md
 |- pom.xml / build.gradle
 ```
-
