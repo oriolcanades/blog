@@ -14,29 +14,36 @@ Todo proyecto necesita una estructura básica para organizarse de manera efectiv
 
 Este podría ser un ejemplo base de la estructura de un proyecto:
 
-> :file_folder: .github/pipelines
-> :file_folder: .mvn/gradle/grapper
-> :file_folder: config
-> :file_folder: docs
-> :file_folder: src
->   :file_folder: main
->       :file_folder: java
->           :file_folder: config
->           :file_folder: controller
->           :file_folder: exception
->           :file_folder: facade
->           :file_folder: model
->           :file_folder: repository
->           :file_folder: service
->           :file_folder: util
->       :file_folder: resources
->           :file_folder: db/migrations
->           :page_facing_up: application.yml
->   :file_folder: test
-> :page_facing_up: .gitignore
-> :page_facing_up: Dockerfile
-> :page_facing_up: CHANGELOG
-> :page_facing_up: README.md
-> :page_facing_up: pom.xml/build.gradle
-
-
+```plaintext
+|- .github / pipelines
+    |- workflows
+    |- CODEOWNERS
+|- .mvn / gradle/grapper
+|- config
+    |- checkstyle
+    |- docker
+    |- monitoring
+|- docs
+    |- diagrams
+    |- img
+|- src
+    |- main
+        |- java
+            |- config
+            |- controller
+            |- exception
+            |- facade
+            |- model
+            |- repository
+            |- service
+            |- util
+        |- resources
+            |- db/migrations
+            |- application.yml
+    |- test
+|- .gitignore
+|- Dockerfile
+|- CHANGELOG
+|- README.md
+|- pom.xml / build.gradle
+```
