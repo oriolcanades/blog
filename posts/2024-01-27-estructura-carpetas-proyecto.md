@@ -2,7 +2,7 @@
 layout: post
 title:  "Estructura de carpetas en un proyecto Java/Spring"
 date:   2024-01-27
-categories: [java, spring-boot, tools]
+categories: [java, spring-boot, folder-structure]
 ---
 
 # Estructura de carpetas en un proyecto Java/Spring
