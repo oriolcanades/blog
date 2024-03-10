@@ -6,7 +6,7 @@ categories: [java, spring-boot, folder-structure]
 ---
 
 # Estructura de carpetas en un proyecto Java/Spring
-_27/01/2024 - v1.0.0 - Oriol Canadés_
+_27/01/2024 - v1.0.2 - Oriol Canadés_
 
 ## Introducción
 
