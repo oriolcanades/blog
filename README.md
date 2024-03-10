@@ -1,5 +1,3 @@
 
-# Posts:
-
 * [Herramientas de desarrollo](./posts/2024-01-27-herramientas-de-desarrollo.md)
-
+* [Estructura de carpetas en un proyecto Java/Spring](./posts/2024-01-27-estructura-carpetas-proyecto.md)
