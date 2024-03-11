@@ -15,7 +15,7 @@ Queremos añadir una estructura abstracta que soporte varios proveedores de un C
 Vamos a ver cómo estructuraríamos el proyecto para soportar esta funcionalidad.
 
 Vista general de la estructura del proyecto:
-![Estructura de carpetas](./resources/hex-arch-adapters.png)
+![Estructura de carpetas](./assets/hex-arch-flex-provider-integration.png)
 
 ### application
 #### /port:

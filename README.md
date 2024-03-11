@@ -7,3 +7,4 @@
 * [Implementando JaCoCo](posts/post-6-jacoco/2024-02-24-jacoco.md)
 * [Controladores: Validaciones de entrada](posts/post-7-validacion-datos-controlador/2024-03-02-validaciones-datos-controllador)
 * [Manejo de excepciones en Spring Boot](posts/post-8-manejo-global-excepciones/2024-03-09-manejo-global-excepciones.md)
+* [Implementación de Arquitectura Hexagonal para Integración Flexible de Proveedores de Soluciones - Caso de uso: Adaptadores de Context Broker](posts/post-9-hex-arch-flex-provider-integration/2024-03-11-hex-arch-flex-provider-integration.md)
