@@ -172,7 +172,7 @@ public class BrokerFactory {
         return switch (brokerConfig.getProvider()) {
             case "scorpio" -> scorpioAdapter;
             case "orion-ld" -> orionLdAdapter;
-            default -> throw new IllegalArgumentException("Invalid IAM provider: " + brokerConfig.getProvider());
+            default -> throw new IllegalArgumentException("Invalid Context Broker provider: " + brokerConfig.getProvider());
         };
     }
 
