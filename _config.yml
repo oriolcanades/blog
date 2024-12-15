@@ -4,8 +4,8 @@
 title: "Blog de Fikua"
 description: "Información sobre las mejores prácticas de codificación, patrones de diseño, arquitectura y mucho más."
 author: Oriol Canadés
-baseurl: "" # Leave empty for root directory
-url: "https://oriolcanades.github.io" # Update with your GitHub Pages URL
+baseurl: ""
+url: "https://oriolcanades.github.io/blog"
 
 # Build settings
 markdown: kramdown
