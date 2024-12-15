@@ -1,0 +1,31 @@
+/* Set the font to Montserrat */
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    /* Adjust the styles for smaller screens */
+    header {
+        text-align: center;
+    }
+}
+
+.responsive-flag {
+    width: 100%;
+    height: auto;
+    max-width: 30px; /* Set the maximum width as needed */
+}
+
+.responsive-brand {
+    width: 100%;
+    height: auto;
+    max-width: 70px; /* Set the maximum width as needed */
+}

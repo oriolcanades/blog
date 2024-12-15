@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <title>Fikua's Tech Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><a href="/">Fikua's Tech Blog</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/categories">Categorías</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="intro">
+        <div class="container">
+            <h2>Bienvenido al blog de tecnología de Fikua</h2>
+            <p>Explora conocimientos sobre buenas prácticas de codificación, patrones de diseño, arquitecturas, ¡y mucho más!</p>
+        </div>
+    </section>
+
+    <section class="latest-posts">
+        <div class="container">
+            <h2>Últimos artículos</h2>
+            <ul>
+                {% for post in site.posts limit:5 %}
+                <li>
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <p>{{ post.excerpt }}</p>
+                    <p><small>Publicado {{ post.date | date: "%B %d, %Y" }}</small></p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; {{ site.time | date: "%Y" }} Fikua's Tech Blog. All rights reserved.</p>
+        <p><a href="/">Home</a> | <a href="/categories">Categorías</a> | <a href="/about">About</a> | <a href="/contact">Contacto</a></p>
+    </div>
+</footer>
+</body>
+</html>
+
