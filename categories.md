@@ -6,8 +6,12 @@ permalink: /categories/
 
 Explorar artículos por categoría:
 
-<ul>
 {% for category in site.categories %}
-  <li><a href=\"/categories/{{ category[0] }}\">{{ category[0] | capitalize }}</a> ({{ category[1].size }})</li>
-{% endfor %}
+## {{ category[0] }}
+
+<ul>
+  {% for post in category[1] %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%d-%m-%Y" }})</li>
+  {% endfor %}
 </ul>
+{% endfor %}
