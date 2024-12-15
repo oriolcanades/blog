@@ -1,0 +1,40 @@
+# _config.yml
+
+# Site settings
+title: "Fikua's Tech Blog"
+description: "Insights on coding best practices, design patterns, architecture, and more!"
+author: Oriol Canadés
+baseurl: "" # Leave empty for root directory
+url: "https://oriolcanades.github.io" # Update with your GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 5
+
+# Theme settings
+theme: minima # Change if using a custom theme
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Oriol Canadés"
+
+# Plugins (optional)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Category options
+gems:
+  - jekyll-paginate
