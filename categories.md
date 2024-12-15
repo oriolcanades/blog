@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Categories
+title: Categorías
 permalink: /categories/
 ---
-
-# Categorías
 
 Explorar artículos por categoría:
 

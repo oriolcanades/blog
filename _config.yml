@@ -1,8 +1,8 @@
 # _config.yml
 
 # Site settings
-title: "Fikua's Tech Blog"
-description: "Insights on coding best practices, design patterns, architecture, and more!"
+title: "Blog de Fikua"
+description: "Información sobre las mejores prácticas de codificación, patrones de diseño, arquitectura y mucho más."
 author: Oriol Canadés
 baseurl: "" # Leave empty for root directory
 url: "https://oriolcanades.github.io" # Update with your GitHub Pages URL
