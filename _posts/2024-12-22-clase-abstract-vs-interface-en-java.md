@@ -121,6 +121,7 @@ Las interfaces permiten que una clase implemente múltiples comportamientos sin 
 - Si varias clases comparten código común.
 - Cuando se necesita herencia jerárquica (ej.: `Vehicle -> Car -> SportsCar`).
 - Cuando se requieren campos o métodos con modificadores de acceso distintos a public.
+
 ## ¿Cuándo usar una Interfaz?
 - Cuando se necesita herencia múltiple.
 - Para definir contratos genéricos que implementarán clases no relacionadas.
