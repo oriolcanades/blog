@@ -3,7 +3,7 @@ layout: page
 permalink: /
 ---
 
-### ¡Bienvenido a mi espacio digital! 👋
+<h3>¡Bienvenido a mi espacio digital! 👋</h3>
 
 En este blog comparto mi pasión por la tecnología, el desarrollo de software y la arquitectura. 
 Aquí encontrarás artículos sobre mejores prácticas de codificación, patrones de diseño y reflexiones sobre los retos y aprendizajes del día a día.
