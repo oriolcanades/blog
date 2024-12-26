@@ -13,7 +13,7 @@ permalink: pretty
 paginate: 5
 
 # Theme settings
-theme: minima # Change if using a custom theme
+theme: null # Change if using a custom theme - minima
 
 # Collections
 collections:
