@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Sobre el blog
+title: Sobre mí
 permalink: /about/
 ---
-
-## Sobre mí
 
 Soy Oriol Canadés, un profesional apasionado por el mundo de la tecnología, la gestión de equipos y la arquitectura de soluciones. 
 Trabajo cada día para encontrar el equilibrio entre la eficiencia técnica y la claridad estratégica, combinando rigor, curiosidad y adaptabilidad.
