@@ -4,8 +4,6 @@ title: Sobre el blog
 permalink: /about/
 ---
 
-# ¡Bienvenido a mi blog!
-
 ## Sobre mí
 
 Soy Oriol Canadés, un profesional apasionado por el mundo de la tecnología, la gestión de equipos y la arquitectura de soluciones. 
@@ -39,13 +37,3 @@ También estoy inmerso en la formación continua, desde certificaciones técnica
 ## ¿En qué puedo ayudarte?
 
 Me apasiona colaborar en proyectos donde la tecnología resuelve problemas reales y contribuye a crear procesos más eficientes y sostenibles. Si crees que mi experiencia y valores pueden aportar algo a tu proyecto o equipo, estoy abierto a conectar.
-
-## ¿Qué encontrarás en este blog?
-
-Un espacio dedicado a compartir conocimientos y reflexiones sobre desarrollo de software, patrones de diseño y liderazgo tecnológico. 
-
-Por otro lado, documento mis experiencias y aprendizajes relacionados con la programación, la arquitectura de software y la gestión de proyectos. 
-
-Mi objetivo es aportar contenido útil y práctico para profesionales de la tecnología y apasionados por este apasionante mundo.
-
-**¡Explora y espero que encuentres inspiración y valor en cada artículo!**
