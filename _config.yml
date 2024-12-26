@@ -1,25 +1,20 @@
 # _config.yml
-
 # Site settings
 title: "Blog de Oriol Canadés"
 description: "Información sobre las mejores prácticas de codificación, patrones de diseño, arquitectura y mucho más."
 author: Oriol Canadés
 baseurl: "/blog"
 url: "https://oriolcanades.github.io"
-
 # Build settings
 markdown: kramdown
 permalink: pretty
 paginate: 5
-
 # Theme settings
 theme: minima
-
 # Collections
 collections:
   posts:
     output: true
-
 # Defaults for posts
 defaults:
   - scope:
@@ -28,13 +23,11 @@ defaults:
     values:
       layout: "post"
       author: "Oriol Canadés"
-
 # Plugins (optional)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
 # Category options
 gems:
   - jekyll-paginate

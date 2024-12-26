@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.0"
-gem "minima", "~> 2.5.1" # Versión actual del tema minima
+gem "minima", "~> 2.5.1"
 gem "jekyll-seo-tag" # Mejora el SEO
 gem "jekyll-sitemap" # Genera automáticamente un sitemap
 gem "jekyll-paginate" # Paginación de artículos
