@@ -1,6 +1,5 @@
 ---
-layout: default
-title: "Bienvenido a mi Blog"
+layout: page
 ---
 
 ¡Hola! 👋 Bienvenido al **Blog de Oriol Canadés**.  
@@ -8,3 +7,4 @@ Aquí encontrarás las mejores prácticas de codificación, patrones de diseño,
 
 💡 Explora los artículos más recientes o visita la sección de contacto para conectar conmigo. 
 **¡Espero que disfrutes el contenido!**
+
