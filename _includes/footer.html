@@ -1,0 +1,25 @@
+<footer class="site-footer h-card" style="text-align: center; display: inline-block">
+    <data class="u-url" href="{{ '/' | relative_url }}" value=""></data>
+    <div class="wrapper">
+        <div class="footer-col-wrapper" style="display: inline-block">
+            <div class="footer-col">
+                <a href="https://www.linkedin.com/in/oriolcanades/" target="_blank">
+                    <svg class="svg-icon orange">
+                        <use xlink:href="{{ 'assets/minima-social-icons.svg#linkedin' | relative_url }}"></use>
+                    </svg>
+                </a>
+                <a href="https://github.com/oriolcanades" target="_blank">
+                    <svg class="svg-icon orange">
+                        <use xlink:href="{{ 'assets/minima-social-icons.svg#github' | relative_url }}"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-col">
+                <p>&copy; {{ site.time | date: "%Y" }} Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <div class="social-links">
+            {%- include social.html -%}
+        </div>
+    </div>
+</footer>

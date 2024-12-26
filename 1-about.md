@@ -4,7 +4,7 @@ title: Sobre mí
 permalink: /about/
 ---
 
-Soy Oriol Canadés, un profesional apasionado por el mundo de la tecnología, la gestión de equipos y la arquitectura de soluciones. 
+Me llamo Oriol Canadés y soy un profesional apasionado por el mundo de la tecnología, la gestión de equipos y la arquitectura de soluciones. 
 Trabajo cada día para encontrar el equilibrio entre la eficiencia técnica y la claridad estratégica, combinando rigor, curiosidad y adaptabilidad.
 
 ## Mis valores: lo que me guía
