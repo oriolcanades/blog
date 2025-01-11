@@ -222,4 +222,3 @@ La estructura de proyecto que he presentado en este artículo es solo una de las
 - [Clean Architecture: A Craftsman's Guide to Software Structure and Design](https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/)
 - [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
 - [Facade Pattern](https://refactoring.guru/design-patterns/facade)
-```
