@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Estructura del proyecto Spring Boot: Una guía práctica"
-date: 2025-01-10
+date: 2025-01-14
 categories: [Spring Boot, Design Patterns, Software Architecture]
 tags: [Java, Spring Boot, Patrones de Diseño]
 author: Oriol Canadés
