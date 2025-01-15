@@ -185,7 +185,7 @@ public class GlobalExceptionHandler {
 }
 ```
 
-## Últimos consejos
+### Últimos consejos
 
 En las clases de excepciones, utiliza un identificador único para cada error. 
 Esto facilita la búsqueda y el seguimiento de errores en los registros.
