@@ -31,3 +31,5 @@ plugins:
 # Category options
 gems:
   - jekyll-paginate
+# Google Analytics
+google_analytics: G-CZ60Z15FE8
