@@ -35,6 +35,10 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Verify sitemap.xml
+        run: ls -l ./_site/sitemap.xml || echo "sitemap.xml does not exist"
+      - name: Force sitemap.xml
+        run: cp sitemap.xml _site/sitemap.xml || echo "sitemap.xml does nit be copied"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
