@@ -4,7 +4,7 @@ title: "Blog de Oriol Canadés"
 description: "Información sobre las mejores prácticas de codificación, patrones de diseño, arquitectura y mucho más."
 author: Oriol Canadés
 baseurl: "/blog"
-url: "https://oriolcanades.github.io"
+url: "https://oriolcanades.com"
 # Build settings
 markdown: kramdown
 permalink: pretty
