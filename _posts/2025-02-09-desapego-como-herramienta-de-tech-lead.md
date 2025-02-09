@@ -5,7 +5,7 @@ date: 2025-02-09
 categories: [Liderazgo, Tech Lead]
 tags: [Liderazgo, Tech Lead, Desarrollo de Equipos]
 author: Oriol Canadés
-version: 1.0
+version: 1.1
 ---
 
 Cuando asumí el rol de Tech Lead hace un año, mi enfoque inicial se basaba en mi capacidad técnica. Creía que mi autoridad dentro del equipo se basaba en tener que ser la persona con más conocimiento técnico, conocedor de las buenas prácticas, el que resolvía los problemas más difíciles y además, guiaba a los demás con mi experiencia. Con el paso del tiempo, el equipo empezó a crecer y esta visión empezó a desmoronarse.

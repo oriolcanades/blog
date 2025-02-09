@@ -2,9 +2,10 @@
 layout: post
 title: "Clase abstracta vs Interface en Java"
 date: 2024-12-22
-categories: [Java]
+categories: [Java, POO]
 tags: [Java, Clase abstracta, Interface]
 author: Oriol Canadés
+version: 1.1
 ---
 
 ## Introducción

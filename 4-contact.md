@@ -4,11 +4,13 @@ title: Contacto
 permalink: /contact/
 ---
 
-¡Me encantaría saber de ti! Si tienes preguntas, comentarios o simplemente quieres saludar, no dudes en ponerte en contacto conmigo.
+¿Hablamos?
 
+Si tienes alguna pregunta, quieres comentar un artículo o simplemente conectar, estaré encantado de saber de ti. 
 Puedes escribirme a través de:
-- [Correo electrónico](mailto:ocanades@gmail.com)
-- [GitHub](https://github.com/oriolcanades)
-- [LinkedIn](https://www.linkedin.com/in/oriolcanades/)
 
-¡Espero conectar contigo pronto!  
+* [Correo electrónico](mailto:ocanades@outlook.com)
+* [GitHub](https://github.com/oriolcanades)
+* [LinkedIn](https://www.linkedin.com/in/oriolcanades/)
+
+¡Hasta pronto!

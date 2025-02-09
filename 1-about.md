@@ -4,34 +4,19 @@ title: Sobre mí
 permalink: /about/
 ---
 
-Me llamo Oriol Canadés y soy un profesional apasionado por el mundo de la tecnología, la gestión de equipos y la arquitectura de soluciones. 
-Trabajo cada día para encontrar el equilibrio entre la eficiencia técnica y la claridad estratégica, combinando rigor, curiosidad y adaptabilidad.
+Soy Oriol Canadés y me apasiona encontrar el equilibrio entre eficiencia técnica y claridad estratégica, ayudando a los equipos a diseñar soluciones sólidas y sostenibles.
+
+Mi enfoque combina rigor técnico, curiosidad y adaptabilidad, asegurando que la tecnología resuelva problemas reales y aporte valor.
 
 ## Mis valores: lo que me guía
 
-En todo lo que hago, me guían valores clave que definen tanto mi enfoque profesional como la persona que quiero ser:
-
-- **Planificación y dirección**: 
-Creo firmemente en la importancia de tener un rumbo claro, tanto en proyectos como en la vida. 
-Por eso, estructuro mis tareas con intención y siempre busco mejorar la forma en que priorizo lo esencial.
-
-- **Curiosidad con responsabilidad**: 
-Me apasiona explorar nuevas tecnologías y formas de hacer las cosas, pero siempre con una visión pragmática, asegurándome de que las soluciones se ajusten a las necesidades reales.
-
-- **Equilibrio y bienestar**: 
-Tanto en la gestión de equipos como en mi vida personal, reconozco que el mejor trabajo surge cuando encontramos armonía entre el esfuerzo y la pausa. 
-Dedico tiempo a cuidar mi energía y la de los equipos con los que trabajo.
-
-- **Autosuficiencia y mejora constante**: 
-Siempre procuro crecer como profesional, asumiendo la responsabilidad de los retos y aprendiendo de cada situación.
+* **Planificación y dirección**: Tener un rumbo claro es clave en la tecnología y en la vida. Me gusta estructurar tareas con intención y priorizar lo esencial.
+* **Curiosidad pragmática**: Explorar nuevas tecnologías con una visión realista, aplicando solo lo que aporta valor.
+* **Equilibrio y bienestar**: La mejor tecnología surge cuando hay armonía entre esfuerzo y pausa.
+* **Autosuficiencia y mejora constante**: Aprender y evolucionar es parte de mi forma de trabajar.
 
 ## Experiencia y trayectoria
 
-Con experiencia en la gestión de equipos y el liderazgo técnico, he tenido la oportunidad de trabajar en proyectos innovadores como el desarrollo de soluciones de credenciales verificables y sistemas multitenant.
-Esta combinación de liderazgo y capacidad técnica me ha permitido actuar como un punto de conexión entre equipos de desarrollo y objetivos de negocio.
+He trabajado en proyectos de cliente así como con tecnologías innovadoras como soluciones de credenciales verificables, combinando arquitectura de software y liderazgo técnico.
 
-También estoy inmerso en la formación continua, desde certificaciones técnicas hasta habilidades como el liderazgo y la comunicación, para asegurar que sigo creciendo y aportando valor en un entorno en constante cambio.
-
-## ¿En qué puedo ayudarte?
-
-Me apasiona colaborar en proyectos donde la tecnología resuelve problemas reales y contribuye a crear procesos más eficientes y sostenibles. Si crees que mi experiencia y valores pueden aportar algo a tu proyecto o equipo, estoy abierto a conectar.
+Mi experiencia me ha convertido en un punto de conexión entre equipos de desarrollo y negocio, ayudando a transformar necesidades en soluciones escalables.

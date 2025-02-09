@@ -5,6 +5,7 @@ date: 2024-12-15
 categories: [Spring Boot, Seguridad]
 tags: [JSR-303, Java, Spring Boot, Validaciones, Seguridad]
 author: Oriol Canadés
+version: 1.1
 ---
 
 ## Introducción
