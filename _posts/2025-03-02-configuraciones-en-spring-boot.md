@@ -189,11 +189,12 @@ spring:
 
 ## Cuadro resumen de Buenas Prácticas
 
-| Estrategia                    | Uso recomendado                                       | Ventajas                                                                                                                                                    | Desventajas                                                                                          |
-|--------------------------------|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| `@Value`                       | Para valores simples.                                 | Fácil de usar.                                                                                                                                              | No soporta estructuras complejas (listas, objetos).  
-Dificultad para inyectar en clases que no son manejadas por Spring. |
-| `@ConfigurationProperties`      | Para agrupar configuraciones y estructuras complejas. | Permite agrupar configuraciones relacionadas en una sola clase.  
+| Estrategia                                                          | Uso recomendado                                       | Ventajas                                                        | Desventajas                                         |
+|---------------------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------|
+| `@Value`                                                            | Para valores simples.                                 | Fácil de usar.                                                  | No soporta estructuras complejas (listas, objetos). |
+| Dificultad para inyectar en clases que no son manejadas por Spring. |                                                       |                                                                 |                                                     |
+| `@ConfigurationProperties`                                          | Para agrupar configuraciones y estructuras complejas. | Permite agrupar configuraciones relacionadas en una sola clase. |                                                     |
+
 Soporta estructuras complejas (listas, mapas, objetos anidados).  
 Facilita la validación de propiedades. | Necesita que `@EnableConfigurationProperties(SecurityProperties.class)` esté habilitado si no se usa `@Component`.  |
 | `Environment`                   | Para acceder dinámicamente a propiedades.             | Útil cuando necesitas leer valores de manera dinámica.                                                                                                      | Menos tipado, puedes cometer errores con los nombres de las propiedades.  |
