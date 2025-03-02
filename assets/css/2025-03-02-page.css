@@ -1,7 +1,7 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* 🔥 Esta línea fuerza que todas las columnas tengan el ancho definido */
+    table-layout: fixed;
 }
 
 th, td {
@@ -9,7 +9,7 @@ th, td {
     padding: 8px;
     text-align: left;
     vertical-align: top;
-    word-wrap: break-word; /* 🔥 Rompe las palabras largas */
+    word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
@@ -18,7 +18,7 @@ th {
 }
 
 /* Establecer anchos fijos para cada columna */
-th:nth-child(1), td:nth-child(1) { width: 20%; }  /* Estrategia */
-th:nth-child(2), td:nth-child(2) { width: 20%; }  /* Uso recomendado */
-th:nth-child(3), td:nth-child(3) { width: 30%; }  /* Ventajas */
-th:nth-child(4), td:nth-child(4) { width: 30%; }  /* Desventajas */
+th:nth-child(1), td:nth-child(1) { width: 15%; }  /* Estrategia */
+th:nth-child(2), td:nth-child(2) { width: 15%; }  /* Uso recomendado */
+th:nth-child(3), td:nth-child(3) { width: 35%; }  /* Ventajas */
+th:nth-child(4), td:nth-child(4) { width: 35%; }  /* Desventajas */
