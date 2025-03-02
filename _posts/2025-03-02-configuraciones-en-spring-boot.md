@@ -189,6 +189,8 @@ spring:
 
 ## Cuadro resumen de Buenas Prácticas
 
+<link rel="stylesheet" href="{{ '/assets/css/2025-03-02-page.css' | relative_url }}">
+
 <table>
     <thead>
         <tr>
@@ -213,7 +215,7 @@ spring:
                 Soporta estructuras complejas (listas, mapas, objetos anidados).<br/>
                 Facilita la validación de propiedades.
             </td>
-            <td>Necesita que <code>@EnableConfigurationProperties(SecurityProperties.class)</code> esté habilitado si no se usa <code>@Component</code>.</td>
+            <td>Necesita que <code>@EnableConfigurationProperties()</code> esté habilitado si no se usa <code>@Component</code>.</td>
         </tr>
         <tr>
             <td><code>Environment</code></td>

@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* 🔥 Esta línea fuerza que todas las columnas tengan el ancho definido */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    word-wrap: break-word; /* 🔥 Rompe las palabras largas */
+    overflow-wrap: break-word;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Establecer anchos fijos para cada columna */
+th:nth-child(1), td:nth-child(1) { width: 20%; }  /* Estrategia */
+th:nth-child(2), td:nth-child(2) { width: 20%; }  /* Uso recomendado */
+th:nth-child(3), td:nth-child(3) { width: 30%; }  /* Ventajas */
+th:nth-child(4), td:nth-child(4) { width: 30%; }  /* Desventajas */
