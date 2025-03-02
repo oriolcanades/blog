@@ -189,13 +189,91 @@ spring:
 
 ## Cuadro resumen de Buenas Prácticas
 
-| Estrategia                    | Uso recomendado                                       | Ventajas                                                                                                                                                                        | Desventajas                                                                                                                 |
-|-------------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| @Value                        | Para valores simples.                                 | Fácil de usar.                                                                                                                                                                  | No soporta estructuras complejas (listas, objetos).<br/>Dificultad para inyectar en clases que no son manejadas por Spring. |
-| @ConfigurationProperties      | Para agrupar configuraciones y estructuras complejas. | Permite agrupar configuraciones relacionadas en una sola clase.<br/>Soporta estructuras complejas (listas, mapas, objetos anidados).<br/>Facilita la validación de propiedades. | Necesita que @EnableConfigurationProperties(SecurityProperties.class) esté habilitado si no se usa @Component.              |
-| Environment                   | Para acceder dinámicamente a propiedades.             | Útil cuando necesitas leer valores de manera dinámica.                                                                                                                          | Menos tipado, puedes cometer errores con los nombres de las propiedades.                                                    |
-| @Profile                      | Para gestionar configuraciones por entornos.          | Facilita la configuración por entornos.<br/>Evita código condicional en la aplicación.                                                                                          | Si no se configura correctamente, puede causar problemas al no cargar el perfil adecuado.                                   |
-| @Configuration con @Bean      | Para configurar valores personalizados.               | Permite modificar valores antes de inyectarlos.<br/>Separa lógica de configuración del código de negocio.                                                                       | Puede ser innecesario para configuraciones simples.                                                                         |
-| Variables de entorno (${VAR}) | Para credenciales y configuraciones externas.         | Seguridad y flexibilidad.<br/>Evita exponer credenciales en el código.                                                                                                          | Puede ser complicado depurar si las variables no están configuradas correctamente.                                          |
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+    td code {
+        background-color: #333;
+        color: #fff;
+        padding: 3px 6px;
+        border-radius: 4px;
+    }
+    /* Definir anchos fijos para las columnas */
+    th:nth-child(1), td:nth-child(1) { width: 20%; }  /* Estrategia */
+    th:nth-child(2), td:nth-child(2) { width: 20%; }  /* Uso recomendado */
+    th:nth-child(3), td:nth-child(3) { width: 30%; }  /* Ventajas */
+    th:nth-child(4), td:nth-child(4) { width: 30%; }  /* Desventajas */
+</style>
 
+<table>
+    <thead>
+        <tr>
+            <th>Estrategia</th>
+            <th>Uso recomendado</th>
+            <th>Ventajas</th>
+            <th>Desventajas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>@Value</code></td>
+            <td>Para valores simples.</td>
+            <td>Fácil de usar.</td>
+            <td>No soporta estructuras complejas (listas, objetos).<br/>Dificultad para inyectar en clases que no son manejadas por Spring.</td>
+        </tr>
+        <tr>
+            <td><code>@ConfigurationProperties</code></td>
+            <td>Para agrupar configuraciones y estructuras complejas.</td>
+            <td>
+                Permite agrupar configuraciones relacionadas en una sola clase.<br/>
+                Soporta estructuras complejas (listas, mapas, objetos anidados).<br/>
+                Facilita la validación de propiedades.
+            </td>
+            <td>Necesita que <code>@EnableConfigurationProperties(SecurityProperties.class)</code> esté habilitado si no se usa <code>@Component</code>.</td>
+        </tr>
+        <tr>
+            <td><code>Environment</code></td>
+            <td>Para acceder dinámicamente a propiedades.</td>
+            <td>Útil cuando necesitas leer valores de manera dinámica.</td>
+            <td>Menos tipado, puedes cometer errores con los nombres de las propiedades.</td>
+        </tr>
+        <tr>
+            <td><code>@Profile</code></td>
+            <td>Para gestionar configuraciones por entornos.</td>
+            <td>
+                Facilita la configuración por entornos.<br/>
+                Evita código condicional en la aplicación.
+            </td>
+            <td>Si no se configura correctamente, puede causar problemas al no cargar el perfil adecuado.</td>
+        </tr>
+        <tr>
+            <td><code>@Configuration</code> con <code>@Bean</code></td>
+            <td>Para configurar valores personalizados.</td>
+            <td>
+                Permite modificar valores antes de inyectarlos.<br/>
+                Separa lógica de configuración del código de negocio.
+            </td>
+            <td>Puede ser innecesario para configuraciones simples.</td>
+        </tr>
+        <tr>
+            <td>Variables de entorno (<code>${VAR}</code>)</td>
+            <td>Para credenciales y configuraciones externas.</td>
+            <td>
+                Seguridad y flexibilidad.<br/>
+                Evita exponer credenciales en el código.
+            </td>
+            <td>Puede ser complicado depurar si las variables no están configuradas correctamente.</td>
+        </tr>
+    </tbody>
+</table>
 
