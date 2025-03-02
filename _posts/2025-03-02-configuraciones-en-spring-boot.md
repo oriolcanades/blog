@@ -189,32 +189,6 @@ spring:
 
 ## Cuadro resumen de Buenas Prácticas
 
-<style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #f4f4f4;
-    }
-    td code {
-        background-color: #333;
-        color: #fff;
-        padding: 3px 6px;
-        border-radius: 4px;
-    }
-    /* Definir anchos fijos para las columnas */
-    th:nth-child(1), td:nth-child(1) { width: 20%; }  /* Estrategia */
-    th:nth-child(2), td:nth-child(2) { width: 20%; }  /* Uso recomendado */
-    th:nth-child(3), td:nth-child(3) { width: 30%; }  /* Ventajas */
-    th:nth-child(4), td:nth-child(4) { width: 30%; }  /* Desventajas */
-</style>
-
 <table>
     <thead>
         <tr>
