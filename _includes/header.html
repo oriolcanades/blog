@@ -1,3 +1,32 @@
+<div class="site-header">
+    <a class="site-title" href="{{ '/' | append: page.lang | append: '/' | relative_url }}">
+        Oriol Canadés
+    </a>
+
+    <nav class="nav-links">
+        {% assign prefix = '/' | append: page.lang | append: '/' %}
+
+        {% if page.lang == "es" %}
+        <a href="{{ prefix }}digital-identity/">Identidad Digital</a>
+        <a href="{{ prefix }}leadership/">Liderazgo</a>
+        <a href="{{ prefix }}software-architecture/">Arquitectura de Software</a>
+        <a href="{{ prefix }}java-spring/">Java / Spring</a>
+        <a href="{{ prefix }}about/">Sobre mí</a>
+        <a href="{{ prefix }}contact/">Contacto</a>
+        <a href="{{ page.url | replace_first: '/es/', '/en/' }}">EN</a>
+
+        {% elsif page.lang == "en" %}
+        <a href="{{ prefix }}digital-identity/">Digital Identity</a>
+        <a href="{{ prefix }}leadership/">Leadership</a>
+        <a href="{{ prefix }}software-architecture/">Software Architecture</a>
+        <a href="{{ prefix }}java-spring/">Java / Spring</a>
+        <a href="{{ prefix }}about/">About</a>
+        <a href="{{ prefix }}contact/">Contact</a>
+        <a href="{{ page.url | replace_first: '/en/', '/es/' }}">ES</a>
+        {% endif %}
+    </nav>
+</div>
+
 <style>
     .site-header {
         position: sticky;
@@ -57,30 +86,3 @@
         }
     }
 </style>
-
-<div class="site-header">
-    <a class="site-title" href="{{ '/' | append: page.lang | append: '/' | relative_url }}">
-        {% if page.lang == "es" %}
-        Blog de Oriol Canadés
-        {% else %}
-        Oriol Canadés Blog
-        {% endif %}
-    </a>
-
-    <nav class="nav-links">
-        {% assign prefix = '/' | append: page.lang | append: '/' %}
-
-        {% if page.lang == "es" %}
-        <a href="{{ prefix }}posts/">Publicaciones</a>
-        <a href="{{ prefix }}about/">Sobre mí</a>
-        <a href="{{ prefix }}contact/">Contacto</a>
-        <a href="{{ page.url | replace_first: '/es/', '/en/' }}">EN</a>
-
-        {% elsif page.lang == "en" %}
-        <a href="{{ prefix }}posts/">Posts</a>
-        <a href="{{ prefix }}about/">About</a>
-        <a href="{{ prefix }}contact/">Contact</a>
-        <a href="{{ page.url | replace_first: '/en/', '/es/' }}">ES</a>
-        {% endif %}
-    </nav>
-</div>

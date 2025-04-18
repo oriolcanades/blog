@@ -2,10 +2,9 @@
 layout: post
 title: "Buenas Prácticas para la Inyección de Configuraciones en Spring Boot"
 date: 2025-03-02
-categories: [Spring Boot, Best Practices]
-tags: [Spring Boot, Configuraciones, Inyección de Dependencias, Buenas Prácticas]
+categories: [Java Spring]
 author: Oriol Canadés
-version: 1.0
+version: 1.1
 lang: es
 ---
 
