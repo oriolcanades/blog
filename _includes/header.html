@@ -1,0 +1,86 @@
+<style>
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 2rem;
+        border-bottom: 1px solid #e0e0e0;
+        background-color: #ffffff;
+        font-family: 'Helvetica Neue', sans-serif;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .site-title:hover {
+        color: #8E8E8E;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #8E8E8E;
+    }
+
+    @media (max-width: 768px) {
+        .site-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            justify-content: flex-start;
+            gap: 0.8rem;
+        }
+    }
+</style>
+
+<div class="site-header">
+    <a class="site-title" href="{{ '/' | append: page.lang | append: '/' | relative_url }}">
+        {% if page.lang == "es" %}
+        Blog de Oriol Canadés
+        {% else %}
+        Oriol Canadés Blog
+        {% endif %}
+    </a>
+
+    <nav class="nav-links">
+        {% assign prefix = '/' | append: page.lang | append: '/' %}
+
+        {% if page.lang == "es" %}
+        <a href="{{ prefix }}posts/">Publicaciones</a>
+        <a href="{{ prefix }}about/">Sobre mí</a>
+        <a href="{{ prefix }}contact/">Contacto</a>
+        <a href="{{ page.url | replace_first: '/es/', '/en/' }}">EN</a>
+
+        {% elsif page.lang == "en" %}
+        <a href="{{ prefix }}posts/">Posts</a>
+        <a href="{{ prefix }}about/">About</a>
+        <a href="{{ prefix }}contact/">Contact</a>
+        <a href="{{ page.url | replace_first: '/en/', '/es/' }}">ES</a>
+        {% endif %}
+    </nav>
+</div>

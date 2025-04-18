@@ -9,6 +9,8 @@ url: "https://oriolcanades.com"
 markdown: kramdown
 permalink: pretty
 paginate: 5
+default_lang: en
+languages: ["en", "es"]
 # Theme settings
 theme: minima
 # Collections
@@ -23,6 +25,11 @@ defaults:
     values:
       layout: "post"
       author: "Oriol Canadés"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
 # Plugins (optional)
 plugins:
   - jekyll-feed

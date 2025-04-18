@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.default_lang }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <!-- Favicon y SEO -->
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Google Analytics -->
+  {% include google-analytics.html %}
+
+</head>
+<body>
+
+<header>
+  {% include header.html %}
+</header>
+
+<main class="page-content" style="padding: 2rem; max-width: 800px; margin: auto;">
+  {{ content }}
+</main>
+
+{% include footer.html %}
+
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
+</style>
+
+</body>
+</html>

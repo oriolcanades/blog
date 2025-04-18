@@ -6,6 +6,7 @@ categories: [Spring Boot, Best Practices]
 tags: [Spring Boot, Configuraciones, Inyección de Dependencias, Buenas Prácticas]
 author: Oriol Canadés
 version: 1.0
+lang: es
 ---
 
 Hoy quiero revisar las buenas prácticas acerca de la inyección de configuraciones definidas en el application.yaml (o application.properties) en el código de nuestro proyecto Spring. Con ello me propongo poder garantizar la mantenibilidad, seguridad y flexibilidad. Aquí te dejo las mejores estrategias:

@@ -1,6 +1,7 @@
 ---
-layout: page
-permalink: /
+layout: default
+permalink: /es/
+lang: es
 ---
 
 <h3>¡Bienvenido a mi blog!</h3>
