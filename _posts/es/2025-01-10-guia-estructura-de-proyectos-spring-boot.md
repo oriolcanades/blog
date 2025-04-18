@@ -6,6 +6,7 @@ categories: [Spring Boot, Diseño de Software]
 tags: [Java, Spring Boot, Patrones de Diseño]
 author: Oriol Canadés
 version: 1.2
+lang: es
 ---
 
 ## Introducción

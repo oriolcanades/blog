@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: Publicaciones
-permalink: /posts/
+permalink: /es/posts/
+lang: es
 ---
 
 <ul>

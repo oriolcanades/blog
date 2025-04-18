@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: Sobre mí
-permalink: /about/
+permalink: /es/about/
+lang: es
 ---
 
 Soy Oriol Canadés y me apasiona encontrar el equilibrio entre eficiencia técnica y claridad estratégica, ayudando a los equipos a diseñar soluciones sólidas y sostenibles.

@@ -6,6 +6,7 @@ categories: [Java, POO]
 tags: [Java, Clase abstracta, Interface]
 author: Oriol Canadés
 version: 1.1
+lang: es
 ---
 
 ## Introducción

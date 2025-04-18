@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: Categorías
-permalink: /categories/
+permalink: /es/categories/
+lang: es
 ---
 
 Explorar artículos por categoría:

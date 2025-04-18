@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: Contacto
-permalink: /contact/
+permalink: /es/contact/
+lang: es
 ---
 
 ¿Hablamos?
