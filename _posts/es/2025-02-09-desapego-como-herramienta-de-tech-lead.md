@@ -2,10 +2,9 @@
 layout: post
 title: "El desapego como herramienta clave en el rol de Tech Lead"
 date: 2025-02-09
-categories: [Liderazgo, Tech Lead]
-tags: [Liderazgo, Tech Lead, Desarrollo de Equipos]
+categories: [Liderazgo]
 author: Oriol Canadés
-version: 1.1
+version: 1.2
 lang: es
 ---
 
@@ -33,7 +32,7 @@ No voy a mentir, soltar el control y el ego no es fácil. Es un proceso en el qu
 
 1. **Observar sin intervenir de inmediato**: Antes de dar una solución, intento hacer preguntas para que el equipo llegue a la respuesta por sí mismo. 
 2. **Reformular problemas en términos de sistemas**: Ayudar al equipo a descomponer los problemas en partes más manejables y visualizar cómo interactúan. 
-3. **Aceptar que mi valor no está en ser el más técnico**: Mi aporte está en la visión global, en la capacidad de conectar puntos y en desbloquear a los demás. 
+3. **Aceptar que el valor que aportas no está en ser el más técnico**: Mi aporte está en la visión global, en la capacidad de conectar puntos y en desbloquear a los demás. 
 4. **Dejar espacio para el crecimiento de los demás**: Si siempre doy la respuesta, freno el aprendizaje del equipo. En cambio, si guío sin imponer, permito que todos evolucionemos.
 
 ## Conclusión

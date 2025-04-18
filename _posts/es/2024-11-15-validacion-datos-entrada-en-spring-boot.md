@@ -2,10 +2,9 @@
 layout: post
 title: "Validación de datos de entrada en Spring Boot"
 date: 2024-11-15
-categories: [Spring Boot, Seguridad]
-tags: [JSR-303, Java, Spring Boot, Validaciones, Seguridad]
+categories: [Java Spring]
 author: Oriol Canadés
-version: 1.2
+version: 1.3
 lang: es
 ---
 
