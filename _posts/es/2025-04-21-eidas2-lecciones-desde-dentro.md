@@ -2,7 +2,7 @@
 layout: post
 title: "Implementando eIDAS2: lecciones reales desde dentro"
 date: 2025-04-21
-categories: [Digital Identity]
+categories: [Identidad Digital]
 author: Oriol Canadés
 version: 1.1
 lang: es
