@@ -6,6 +6,8 @@ categories: [Liderazgo]
 author: Oriol Canadés
 version: 1.2
 lang: es
+permalink: /es/liderazgo/2025/02/09/desapego-como-herramienta-de-tech-lead/
+translated_url: /en/leadership/2025/02/09/detachment-as-a-key-tool-in-the-tech-lead/
 ---
 
 Cuando asumí el rol de Tech Lead hace un año, mi enfoque inicial se basaba en mi capacidad técnica. Creía que mi autoridad dentro del equipo se basaba en tener que ser la persona con más conocimiento técnico, conocedor de las buenas prácticas, el que resolvía los problemas más difíciles y además, guiaba a los demás con mi experiencia. Con el paso del tiempo, el equipo empezó a crecer y esta visión empezó a desmoronarse.

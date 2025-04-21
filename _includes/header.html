@@ -7,23 +7,23 @@
         {% assign prefix = '/' | append: page.lang | append: '/' %}
 
         {% if page.lang == "es" %}
-        <a href="{{ prefix }}digital-identity/">Identidad Digital</a>
-        <a href="{{ prefix }}leadership/">Liderazgo</a>
-        <a href="{{ prefix }}software-architecture/">Arquitectura de Software</a>
-        <a href="{{ prefix }}java-spring/">Java / Spring</a>
-        <a href="{{ prefix }}about/">Sobre mí</a>
-        <a href="{{ prefix }}contact/">Contacto</a>
-        <a href="{{ page.url | replace_first: '/es/', '/en/' }}">EN</a>
-
+            <a href="{{ prefix }}digital-identity/">Identidad Digital</a>
+            <a href="{{ prefix }}leadership/">Liderazgo</a>
+            <a href="{{ prefix }}software-architecture/">Arquitectura de Software</a>
+            <a href="{{ prefix }}java-spring/">Java / Spring</a>
+            <a href="{{ prefix }}about/">Sobre mí</a>
+            <a href="{{ prefix }}contact/">Contacto</a>
+            <a href="{{ page.translated_url | default: page.url | replace_first: '/es/', '/en/' }}">EN</a>
         {% elsif page.lang == "en" %}
-        <a href="{{ prefix }}digital-identity/">Digital Identity</a>
-        <a href="{{ prefix }}leadership/">Leadership</a>
-        <a href="{{ prefix }}software-architecture/">Software Architecture</a>
-        <a href="{{ prefix }}java-spring/">Java / Spring</a>
-        <a href="{{ prefix }}about/">About</a>
-        <a href="{{ prefix }}contact/">Contact</a>
-        <a href="{{ page.url | replace_first: '/en/', '/es/' }}">ES</a>
+            <a href="{{ prefix }}digital-identity/">Digital Identity</a>
+            <a href="{{ prefix }}leadership/">Leadership</a>
+            <a href="{{ prefix }}software-architecture/">Software Architecture</a>
+            <a href="{{ prefix }}java-spring/">Java / Spring</a>
+            <a href="{{ prefix }}about/">About</a>
+            <a href="{{ prefix }}contact/">Contact</a>
+            <a href="{{ page.translated_url | default: page.url | replace_first: '/en/', '/es/' }}">ES</a>
         {% endif %}
+
     </nav>
 </div>
 

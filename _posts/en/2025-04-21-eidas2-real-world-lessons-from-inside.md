@@ -6,6 +6,8 @@ categories: [Digital Identity]
 author: Oriol Canadés
 version: 1.1
 lang: en
+permalink: /en/digital-identity/2025/04/21/eidas2-real-world-lessons-from-inside/
+translated_url: /es/identidad-digital/2025/04/21/eidas2-lecciones-desde-dentro/
 ---
 
 # Introduction
