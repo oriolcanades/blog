@@ -1,47 +1,55 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.default_lang }}">
+<html lang="{{ page.lang | default: site.default_lang }}" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
-  <!-- Favicon y SEO -->
+  <!-- Favicon clásico -->
+  <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16x16.png' | relative_url }}">
+
+  <!-- iPhone/iPad -->
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+
+  <!-- Android High-Res -->
+  <link rel="icon" type="image/png" sizes="192x192"
+        href="{{ '/assets/img/android-chrome-192x192.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="512x512"
+        href="{{ '/assets/img/android-chrome-512x512.png' | relative_url }}">
+
+  <!-- SEO -->
+  <meta name="theme-color" content="#1B263B">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/og-default.jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
   <!-- Google Analytics -->
   {% include google-analytics.html %}
 
 </head>
+
 <body>
 
 <header>
   {% include header.html %}
 </header>
 
-<main class="page-content" style="padding: 2rem; max-width: 800px; margin: auto;">
+<main class="page-content">
   {{ content }}
 </main>
 
-{% include footer.html %}
-
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  main {
-    flex: 1;
-  }
-</style>
+<footer>
+  {% include footer.html %}
+</footer>
 
 </body>
+
 </html>

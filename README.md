@@ -19,4 +19,11 @@ To stop the project, press `Ctrl + C` in the terminal. If this does not work, cl
 ps aux |grep jekyll |awk '{print $2}' | xargs kill -9
 ```
 
+http://127.0.0.1:4000/en/
 
+# Color scheme
+- Azul oscuro (#1B263B)
+- Gris oscuro (#3A3A3C)
+- Azul medio (#415A77)
+- Gris medio (#A1A1A1)
+- Azul grisáceo claro (#778DA9)

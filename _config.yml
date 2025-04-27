@@ -11,8 +11,6 @@ permalink: pretty
 paginate: 5
 default_lang: en
 languages: ["en", "es"]
-# Theme settings
-theme: minima
 # Collections
 collections:
   posts:
