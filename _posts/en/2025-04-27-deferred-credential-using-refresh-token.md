@@ -11,8 +11,6 @@ translated_url: /es/identidad-digital/2025/04/27/credencial-diferida-usando-refr
 description: "Learn how to enhance resilience in OID4VCI by using Refresh Tokens in Pre-Authorized Code flows for deferred credential issuance scenarios."
 ---
 
-# How to Ensure Deferred Credential Issuance Using Refresh Tokens
-
 Throughout my work on digital identity projects, I have encountered a recurring challenge: **how can we guarantee credential issuance when the process cannot be completed immediately?**
 
 Working with issuance flows based on the [OpenID for Verifiable Credential Issuance (OID4VCI)](https://openid.github.io/OpenID4VCI/openid-4-verifiable-credential-issuance-wg-draft.html) specification, the **Pre-Authorized Code** flow facilitates scenarios where the Wallet does not require an interactive authorization step. However, in **deferred issuance** scenarios involving manual validations or asynchronous processes, a critical question arises:  
