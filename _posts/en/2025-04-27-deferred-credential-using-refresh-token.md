@@ -13,19 +13,24 @@ description: "Learn how to enhance resilience in OID4VCI by using Refresh Tokens
 
 Throughout my work on digital identity projects, I have encountered a recurring challenge: **how can we guarantee credential issuance when the process cannot be completed immediately?**
 
-Working with issuance flows based on the [OpenID for Verifiable Credential Issuance (OID4VCI)](https://openid.github.io/OpenID4VCI/openid-4-verifiable-credential-issuance-wg-draft.html) specification, the **Pre-Authorized Code** flow facilitates scenarios where the Wallet does not require an interactive authorization step. However, in **deferred issuance** scenarios involving manual validations or asynchronous processes, a critical question arises:  
+Working with issuance flows based on the [OpenID for Verifiable Credential Issuance (OID4VCI)](https://openid.github.io/OpenID4VCI/openid-4-verifiable-credential-issuance-wg-draft.html) specification, 
+the Pre-Authorized Code flow facilitates scenarios where the Wallet does not require an interactive authorization step. However, in deferred issuance scenarios involving manual validations or asynchronous processes, 
+a critical question arises:  
 **What happens if the Access Token expires before the credential is ready to be delivered?**
 
-In this post, I want to share how we addressed this challenge, the solutions we explored, and why using **Refresh Tokens** in Pre-Authorized Code flows becomes a key piece to ensure resilience in verifiable credential issuance.
+In this post, I want to share how we addressed this challenge, the solutions we explored, and why using Refresh Tokens in Pre-Authorized Code flows becomes a key piece to ensure resilience in verifiable credential issuance.
 
 ## A bit of context
 
-When a Credential Issuer cannot issue a credential immediately, it responds to the Wallet with a **transaction_id**, allowing the Wallet to retrieve the credential later via the **Deferred Credential Endpoint**. However, the specification establishes that:
+When a Credential Issuer cannot issue a credential immediately, it responds to the Wallet with a transaction_id, 
+allowing the Wallet to retrieve the credential later via the Deferred Credential Endpoint. 
+However, the specification establishes that:
 
-- The **Access Token** is required to access the Deferred Credential Endpoint.
+- The Access Token is required to access the Deferred Credential Endpoint.
 - As far as I have analyzed, there is no standardized mechanism to renew the Access Token in the Pre-Authorized Code flow.
 
-Although optional, the OID4VCI documentation allows the issuance of a **Refresh Token** at the Token Endpoint. Implementing it properly becomes crucial in deferred issuance scenarios.
+Although optional, the OID4VCI documentation allows the issuance of a Refresh Token at the Token Endpoint. 
+Implementing it properly becomes crucial in deferred issuance scenarios.
 
 Let's look at the use cases where it would be beneficial to leverage a Refresh Token in the Pre-Authorized Code flow.
 
@@ -45,9 +50,9 @@ Various factors (infrastructure problems, signing errors, network outages) can p
 
 Although the Pre-Authorized Code flow does not include an Authorization Request, OAuth 2.0 ([RFC6749](https://datatracker.ietf.org/doc/html/rfc6749)) allows the issuance of a Refresh Token. To implement it correctly:
 
-1. Issue a **short-lived Access Token** (5–10 minutes).
-2. Issue a **Refresh Token** valid for 7, 30, or 90 days.
-3. Associate the Refresh Token to the specific **transaction_id**.
+1. Issue a short-lived Access Token (5–10 minutes).
+2. Issue a Refresh Token valid for 7, 30, or 90 days.
+3. Associate the Refresh Token to the specific transaction_id.
 4. Allow Access Token renewal only if:
    - The `transaction_id` is still valid.
    - The credential has not been issued yet.
@@ -88,7 +93,7 @@ Upon receiving a Credential Response with a `transaction_id`:
 
 ## Final notes
 
-Implementing Refresh Tokens in Pre-Authorized Code flows is crucial to ensure the **resilience** and **usability** of verifiable credential issuance systems. It is not just about complying with the specification, but about **building trust** in digital identity processes.
+Implementing Refresh Tokens in Pre-Authorized Code flows is crucial to ensure the resilience and usability of verifiable credential issuance systems. It is not just about complying with the specification, but about building trust in digital identity processes.
 
 Modern enterprise systems must support asynchronous flows, interruptions, and variable waiting times without impacting user experience. Robust deferred issuance is a fundamental piece to achieve this.
 
