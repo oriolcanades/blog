@@ -15,6 +15,4 @@ Este blog es donde comparto aprendizajes sobre
 <a href="/es/java-spring/">desarrollo Java y Spring</a> y <a href="/es/leadership/">Liderazgo</a>.
 Aquí no encontrarás fórmulas mágicas, sino ideas reales, errores útiles y reflexiones desde la práctica.
 
-Si algo de lo que lees te resuena, me encantará que conectemos.
-
-👉 [Conóceme](/es/about/) • [Contáctame](/es/contact/)
+Si algo de lo que lees te resuena, me encantará que [conectemos](/es/about/).

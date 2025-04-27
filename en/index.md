@@ -15,6 +15,4 @@ This blog is where I share lessons and ideas around <a href="/en/digital-identit
 You won’t find universal solutions here — just honest reflections, 
 useful failures and insights from real-world experience.
 
-If something resonates with you, I’d love to connect.
-
-👉 [About me](/en/about/) • [Get in touch](/en/contact/)
+If something resonates with you, I’d love to [connect](/en/about/).
