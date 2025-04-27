@@ -2,7 +2,7 @@
 layout: post
 title: "Validación de datos de entrada en Spring Boot"
 date: 2024-11-15
-categories: [Java Spring]
+categories: [Arquitectura de Software]
 author: Oriol Canadés
 version: 1.3
 lang: es

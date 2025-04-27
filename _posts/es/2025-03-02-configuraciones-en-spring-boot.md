@@ -2,7 +2,7 @@
 layout: post
 title: "Buenas Prácticas para la Inyección de Configuraciones en Spring Boot"
 date: 2025-03-02
-categories: [Java Spring]
+categories: [Arquitectura de Software]
 author: Oriol Canadés
 version: 1.1
 lang: es

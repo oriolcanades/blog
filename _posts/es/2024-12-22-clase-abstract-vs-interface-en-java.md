@@ -2,7 +2,7 @@
 layout: post
 title: "Clase abstracta vs Interface en Java"
 date: 2024-12-22
-categories: [Java Spring]
+categories: [Arquitectura de Software]
 author: Oriol Canadés
 version: 1.2
 lang: es

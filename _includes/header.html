@@ -7,23 +7,30 @@
         {% assign prefix = '/' | append: page.lang | append: '/' %}
 
         {% if page.lang == "es" %}
-            <a href="{{ prefix }}digital-identity/">Identidad Digital</a>
-            <a href="{{ prefix }}leadership/">Liderazgo</a>
-            <a href="{{ prefix }}software-architecture/">Arquitectura de Software</a>
-            <a href="{{ prefix }}java-spring/">Java / Spring</a>
-            <a href="{{ prefix }}about/">Sobre mí</a>
-            <a href="{{ prefix }}contact/">Contacto</a>
-            <a href="{{ page.translated_url | default: page.url | replace_first: '/es/', '/en/' }}">EN</a>
+        <a href="{{ prefix }}digital-identity/">Identidad Digital</a>
+        <a href="{{ prefix }}leadership/">Liderazgo</a>
+        <a href="{{ prefix }}software-architecture/">Arquitectura de Software</a>
+        <a href="{{ prefix }}about/">Sobre mí</a>
+        <a href="{{ prefix }}contact/">Contacto</a>
         {% elsif page.lang == "en" %}
-            <a href="{{ prefix }}digital-identity/">Digital Identity</a>
-            <a href="{{ prefix }}leadership/">Leadership</a>
-            <a href="{{ prefix }}software-architecture/">Software Architecture</a>
-            <a href="{{ prefix }}java-spring/">Java / Spring</a>
-            <a href="{{ prefix }}about/">About</a>
-            <a href="{{ prefix }}contact/">Contact</a>
-            <a href="{{ page.translated_url | default: page.url | replace_first: '/en/', '/es/' }}">ES</a>
+        <a href="{{ prefix }}digital-identity/">Digital Identity</a>
+        <a href="{{ prefix }}leadership/">Leadership</a>
+        <a href="{{ prefix }}software-architecture/">Software Architecture</a>
+        <a href="{{ prefix }}about/">About</a>
+        <a href="{{ prefix }}contact/">Contact</a>
         {% endif %}
 
+        <!-- Language Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">🌐 {{ page.lang | upcase }} ▼</button>
+            <div class="dropdown-content">
+                {% if page.lang == "es" %}
+                <a href="{{ page.translated_url | default: page.url | replace_first: '/es/', '/en/' }}">English</a>
+                {% elsif page.lang == "en" %}
+                <a href="{{ page.translated_url | default: page.url | replace_first: '/en/', '/es/' }}">Español</a>
+                {% endif %}
+            </div>
+        </div>
     </nav>
 </div>
 
@@ -71,6 +78,55 @@
 
     .nav-links a:hover {
         color: #8E8E8E;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropbtn {
+        background-color: #ffffff;
+        color: #333;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .dropbtn:hover {
+        background-color: #f5f5f5;
+        color: #8E8E8E;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #ffffff;
+        min-width: 140px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+        z-index: 1;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: #333;
+        padding: 0.8rem 1rem;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
     @media (max-width: 768px) {

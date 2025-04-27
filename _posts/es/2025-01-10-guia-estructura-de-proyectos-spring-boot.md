@@ -2,7 +2,7 @@
 layout: post
 title: "Estructura del proyecto Spring Boot: Una guía práctica"
 date: 2025-01-14
-categories: [Java Spring]
+categories: [Arquitectura de Software]
 author: Oriol Canadés
 version: 1.3
 lang: es
