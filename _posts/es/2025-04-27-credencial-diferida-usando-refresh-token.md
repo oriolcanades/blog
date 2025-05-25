@@ -9,7 +9,6 @@ lang: es
 permalink: /es/identidad-digital/2025/04/27/credencial-diferida-usando-refresh-token/
 translated_url: /en/digital-identity/2025/04/27/deferred-credential-using-refresh-token/
 description: "Descubre cómo reforzar la resiliencia en OID4VCI usando Refresh Tokens en flujos Pre-Authorized Code para gestionar emisiones diferidas."
-
 ---
 
 A lo largo de mi trabajo en proyectos de identidad digital, me he encontrado con un reto recurrente: ¿cómo garantizar la emisión de credenciales cuando el proceso no puede completarse de inmediato?
