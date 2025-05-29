@@ -11,7 +11,7 @@ translated_url: /en/digital-identity/2025/05/25/bitstring-status-list/
 description: "Explora el concepto de Bitstring Status List en Verifiable Credentials y su implementación en la especificación W3C v2.0, facilitando la verificación eficiente del estado de las credenciales."
 ---
 
-Las *Verifiable Credentials* (VC) han emergido como uno de los pilares fundamentales del ecosistema de identidad digital descentralizada. Como parte del estándar definido por el W3C, permiten representar información verificable de forma segura, privada e interoperable. Sin embargo, su crecimiento en escenarios reales ha puesto sobre la mesa nuevas necesidades: ¿cómo revocar una credencial sin romper su privacidad?, ¿cómo garantizar que una credencial sigue siendo válida a lo largo del tiempo sin exponer innecesariamente a su portador?
+Las *Verifiable Credentials* (VC) han emergido como uno de los pilares fundamentales del ecosistema de identidad digital descentralizada. Como parte del estándar definido por el W3C, permiten representar información verificable de forma segura, privada, interoperable y controlada. Sin embargo, su crecimiento en escenarios reales ha puesto sobre la mesa nuevas necesidades: ¿cómo revocar una credencial sin romper su privacidad?, ¿cómo garantizar que una credencial sigue siendo válida a lo largo del tiempo sin exponer innecesariamente a su portador?
 
 Aquí es donde entra en juego el concepto de **Status List** —en concreto, el uso de una *BitstringStatusListCredential* como mecanismo de revocación o suspensión. En este artículo exploraremos su papel en ecosistemas como eIDAS2 o SSI empresarial, su valor arquitectónico, cómo se consulta y se representa, y por qué está ganando relevancia como método interoperable.
 
@@ -24,7 +24,7 @@ Algunos casos típicos que requieren mecanismos de estado son:
 - Suspensión temporal (ej. acceso bloqueado por mantenimiento).
 - Verificación pasiva por parte de terceros (sin contactar al emisor).
 
-## ¿Qué es una BitstringStatusListCredential?
+## ¿Qué es una Bitstring Status List Credential (W3C)?
 
 Una *BitstringStatusListCredential* es una credencial firmada cuyo propósito no es identificar a un sujeto, sino listar el estado de hasta 131.072 otras credenciales.
 
@@ -39,6 +39,7 @@ El campo `encodedList` dentro del `credentialSubject` contiene una cadena binari
 La lista es pública, pero anónima: nadie puede saber a quién corresponde un índice si no conoce la credencial original.
 
 ## Estructura de una BitstringStatusListCredential
+
 ```json
 {
   "@context": ["https://www.w3.org/ns/credentials/v2"],
@@ -54,22 +55,21 @@ La lista es pública, pero anónima: nadie puede saber a quién corresponde un �
   }
 }
 ```
+📘 [Referencia oficial al draft del W3C](https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/)
 
-## Consultando el estado de una credencial
+## Cómo verificar el estado de una Verifiable Credential
 
-Este sistema permite distintas formas de consulta:
-- Ver toda la lista: GET `/credentials/status/1`
-- Consultar un índice específico: `GET /credentials/status/1/{statusListIndex}`
+El verifier debe:
+1. Obtener el valor `statusListCredential` y `statusListIndex` de la credencial verificable.
+2. Descargar el recurso `statusListCredential` (por ejemplo: `/credentials/status/1).
+3. Decodificar el campo encodedList (base64 + gzip).
+4. Leer el bit en la posición statusListIndex.
 
-Ejemplo:
-```curl
-curl --location 'http://issuer.127.0.0.1.nip.io/credentials/status/1/12345'
+Ejemplo conceptual:
+```java
+byte[] bitstring = decodeBase64Gzip(encodedList);
+boolean isRevoked = checkBit(bitstring, statusListIndex) == 1;
 ```
-
-Posibles respuestas:
-- `STATUS: Valid or not assigned yet`
-- `STATUS: Revoked`
-
 
 ## Ejemplo: LEARCredentialMachine
 

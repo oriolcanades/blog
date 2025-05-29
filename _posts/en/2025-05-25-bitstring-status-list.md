@@ -24,7 +24,7 @@ Typical scenarios that require status mechanisms include:
 - Temporary suspension (e.g., access blocked during maintenance).
 - Passive verification by third parties (without contacting the issuer).
 
-## What is a BitstringStatusListCredential?
+## What is a Bitstring Status List Credential (W3C)?
 
 A *BitstringStatusListCredential* is a signed credential whose purpose is not to identify a subject but to list the status of up to 131,072 other credentials.
 
@@ -39,6 +39,7 @@ The `encodedList` field inside the `credentialSubject` contains a 16KB binary st
 The list is public, but anonymous: no one can know which credential corresponds to which index without the original credential.
 
 ## Structure of a BitstringStatusListCredential
+
 ```json
 {
   "@context": ["https://www.w3.org/ns/credentials/v2"],
@@ -54,21 +55,21 @@ The list is public, but anonymous: no one can know which credential corresponds 
   }
 }
 ```
+📘 [Official W3C Draft Reference](https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/)
 
-## Checking the status of a credential
+# How to verify the status of a Verifiable Credential
 
-This system allows for multiple types of queries:
-- View the entire list: GET `/credentials/status/1`
-- Check a specific index: `GET /credentials/status/1/{statusListIndex}`
+The verifier must:
+1. Retrieve `statusListCredential` and `statusListIndex` from the Verifiable Credential.
+2. Download the `statusListCredential` resource (e.g., `/credentials/status/1`).
+3. Decode the `encodedList` field (base64 + gzip).
+4. Read the bit at position `statusListIndex`.
 
-Example:
-```curl
-curl --location 'http://issuer.127.0.0.1.nip.io/credentials/status/1/12345'
+Conceptual example:
+```java
+byte[] bitstring = decodeBase64Gzip(encodedList);
+boolean isRevoked = checkBit(bitstring, statusListIndex) == 1;
 ```
-
-Possible responses:
-- `STATUS: Valid or not assigned yet`
-- `STATUS: Revoked`
 
 ## Example: LEARCredentialMachine
 
@@ -131,7 +132,7 @@ Enables traceability in accordance with frameworks like eIDAS 2.0 or AML without
 ## Best practices for implementation
 
 - Sign the status list as a JWT.
-- Use GZIP + Base64URL for the encodedList.
+- Use GZIP + Base64URL for the `encodedList`.
 - Centralize index management.
 - Do not expose the full list in frontend applications.
 - Validate that bits are within valid index ranges.
